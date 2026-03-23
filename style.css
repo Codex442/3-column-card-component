@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  margin-top: 3rem;
+}
+.card-container {
+  color: white;
+  margin: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  max-width: 900px;
+  /* margin: auto; */
+  margin-inline: auto;
+}
+.card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  flex-basis: 100%;
+}
+.card img {
+  width: 64px;
+  height: 40px;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+}
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  opacity: 0.7;
+  line-height: 24px;
+  margin-bottom: 2.5rem;
+}
+.card a {
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 2em;
+  border: 2px solid white;
+  margin-top: auto;
+  /* margin-right: auto; */
+  align-self: flex-start;
+}
+.orange-card {
+  background-color: #e28525;
+  /* border-radius: 8px 8px 0 0; */
+}
+.cyan-card {
+  background: #016972;
+}
+.green-card {
+  background: #00403f;
+  /* border-radius: 0 0 8px 8px; */
+}
+@media (max-width: 850px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 350px;
+  }
+  .card {
+    width: unset;
+    width: auto;
+  }
+  .orange-card a {
+    background-color: white;
+    color: #e28525;
+    border: none;
+  }
+  .cyan-card a {
+    background-color: white;
+    color: #016972;
+    border: none;
+  }
+  .green-card a {
+    background-color: white;
+    color: #00403f;
+    border: none;
+  }
+}
